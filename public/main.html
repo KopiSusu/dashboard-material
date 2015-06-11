@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html ng-app='MysiteApp'>
+  <head>
+    <title> AERUREX </title>
+    <base href='/'>
+    <link rel='stylesheet' href='stylesheets/angular-material.css' />
+    <link rel='stylesheet' href='stylesheets/nav.css' />
+    <link rel='stylesheet' href='stylesheets/sidebar.css' />
+    <link rel='stylesheet' href='stylesheets/landing.css' />
+  </head>
+
+  <body ng-app='MysiteApp'>
+  
+    <div class='container' ng-controller='AppCtrl'>
+
+        <section layout="row" flex="">
+
+          <side-bar></side-bar>
+
+          <landing-page></landing-page>
+
+        </section>
+
+    </div>
+
+    <script src='lib/jquery.js'></script>
+    <script src='lib/angular.js'></script>
+    <script src='lib/angular-route.js'></script>
+    <script src='lib/angular-animate.js'></script>
+    <script src='lib/angular-material.js'></script>
+    <script src='lib/angular-aria.js'></script>
+    <script src='src/script.js'></script>
+    <script src='src/directives.js'></script>
+    <script src='src/app.js'></script>
+
+  </body>
+</html>
