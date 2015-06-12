@@ -1,4 +1,4 @@
-<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-open="isSidenavOpen">
+<!-- <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-open="isSidenavOpen">
 
 	<md-toolbar class="md-theme-indigo">
 	  <h1 class="md-toolbar-tools">Sidenav Left</h1>
@@ -11,5 +11,29 @@
 	  </md-button>
 	</md-content>
 
+</md-sidenav> -->
+
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-open="isSidenavOpen">
+
+	<md-toolbar class="md-theme-indigo">
+	  <h1 class="md-toolbar-tools">Sidenav Left</h1>
+	</md-toolbar>
+	<md-content layout-padding="" ng-controller="LeftCtrl">
+		<md-list ng-repeat="comic in comics" class="md-primary" ng-click="selectComic(comic.id); close()" ng-mouseover="selectComic(comic.id)">
+			<md-button>
+		   <md-list-item md-expando>
+		     <a >{{comic.title}}</a>
+		   </md-list-item>
+	  	</md-button>
+		</md-list>
+	</md-content>
+
 </md-sidenav>
 
+<!-- <md-list ng-repeat="comic in comics" class="md-primary" ng-click="selectComic(comic.id); close()" ng-mouseover="selectComic(comic.id)">
+
+   <md-list-item md-expando>
+     <label>{{comic.title}}</label>
+   </md-list-item>
+
+</md-list> -->
